@@ -1,0 +1,204 @@
+/*
+    yehaoze
+    2024.05.03.
+    I-2-N
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+
+.总功能栏 {
+    width: 10vw;
+    height: 6vw;
+    background-color: white;
+    border-radius: 2vw;
+    position: fixed;
+    top: 1vw;
+    left: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:solid 2px black;
+}
+
+.logo {
+    display: flex;
+    width: 10vw;
+    height: 4vw;
+    border-radius: 2vw 2vw 0 0;
+    background-image: url(logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo:hover {
+    background-size: 8.5vw;
+}
+
+
+.功能栏 {
+    display: flex;
+    border-top: solid 2px rgb(109, 109, 109);
+}
+
+#功能栏按钮 {
+    transition-duration: 0.5s;
+    width: 5vw;
+    height: 2vw;
+    text-align: center;
+}
+
+#功能栏按钮:hover {
+    background-color:rgb(139, 139, 139);
+}
+
+.主页 {
+    border-radius: 0 0 0 2vw;
+    border-right: solid 2px rgb(109, 109, 109);
+}
+
+.搜索 {
+    border-radius: 0 0 2vw 0;
+}
+
+#功能栏按钮_按钮_主页 {
+    width: 4vw;
+    height: 2vw;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(主页.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left: 0.5vw;
+}
+
+#功能栏按钮_按钮_搜索 {
+    width: 4vw;
+    height: 2vw;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(搜索.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    right: 0.5vw;
+}
+
+.搜索功能 {
+    position: absolute;
+    top: 1vw;
+    left: 19vw;
+    border:solid 2px black;
+    padding: 4vw;
+    border-radius: 2vw;
+    background-image: url(搜索背景.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.搜索功能_标题 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+#input {
+    width: 50vw;
+    height: 2vw;
+    border-radius: 2vw;
+    margin-top: 2.5vw;
+    text-align: center;
+    font-size: 1.2vw;
+    background-image: url(搜索.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:1vw;
+}
+
+.搜索功能_确定 {
+    padding: 0.2vw;
+    font-size: 1vw;
+    border-radius: 0.6vw;
+}
+
+.搜索结果 {
+    background-color: white;
+    width: 62vw;
+    height: 17vw;
+    position: absolute;
+    top: 22vw;
+    left: 14.5vw;
+    border:solid 5px rgb(63, 63, 63);
+    border-radius: 2vw;
+    padding: 4vw;
+}
+
+.显示 {
+    padding: 13px;
+    column-count: 9;
+    column-gap: 10px;
+}
+
+
+.游戏显示 {
+    break-inside: avoid;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 1vw;
+    background-color: white;
+    background-image: url(游戏1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+.游戏显示2 {
+    break-inside: avoid;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 1vw;
+    background-color: white;
+    background-image: url(游戏2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+.游戏显示3 {
+    break-inside: avoid;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 1vw;
+    background-color: white;
+    background-image: url(游戏3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+.游戏显示4 {
+    break-inside: avoid;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 1vw;
+    background-color: white;
+    background-image: url(游戏4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+
+.显示_防遮挡 {
+    break-inside: avoid;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 1vw;
+}
