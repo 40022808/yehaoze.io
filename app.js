@@ -10,11 +10,17 @@ function 功能栏按钮_按钮_主页() {
 function 功能栏按钮_按钮_主页2() {
     window.location.href = "index.html";
 }
+function 功能栏按钮_按钮_主页3() {
+    window.location.href = "../index.html";
+}
 function 功能栏按钮_按钮_搜索() {
     window.location.href = "index2.html";
 }
 function 功能栏按钮_按钮_搜索2() {
     window.location.href = "index2.html";
+}
+function 功能栏按钮_按钮_搜索3() {
+    window.location.href = "../index2.html";
 }
 
 
@@ -31,8 +37,8 @@ function 搜索功能_确定() {
 
 
 
-const play_button = document.querySelector(".play")
-
-play_button.addEventListener('click', ()=>{
+function play() {
     window.location.href = "game/game.html"
-})
+}
+
+

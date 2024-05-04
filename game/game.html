@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>game</title>
 </head>
 <body>
     
+    <audio id="热血战斗" src="bgm/热血战斗.mp3" loop type="mp3" preload="auto"></audio>
+
+    <div class="总功能栏">
+        <div class="logo"></div>
+        <div class="功能栏" id="功能栏">
+            <div class="主页" id="功能栏按钮">
+                <button id="功能栏按钮_按钮_主页" onclick="功能栏按钮_按钮_主页3()"></button>
+            </div>
+            <div class="搜索" id="功能栏按钮">
+                <button id="功能栏按钮_按钮_搜索" onclick="功能栏按钮_按钮_搜索3()"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../app.js"></script>
+
+
+    <div class="开始游戏">
+        <h1 class="游戏标题">Epic Battle</h1>
+        <button class="开始游戏_button" id="开始游戏_button">start</button>
+    </div>
+
+
+    <div class="游戏界面">
+        <div class="游戏界面_界面">
+
+        </div>
+        <div class="游戏界面_功能栏">
+            <button class="攻击">攻击</button>
+            <button class="">123</button>
+            <button class="">abc</button>
+        </div>
+    </div>
+    <div class="me_data">
+        <div class="me"></div>
+    </div>
+    <div class="boss_data">
+        <div class="boss"></div>
+    </div>
+
+
+    <script src="app2.js"></script>
 </body>
 </html>

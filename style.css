@@ -279,6 +279,15 @@ body {
 }
 
 
+
+
+.图标0 {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(image/游戏0.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .图标1 {
     width: 20vw;
     height: 20vw;

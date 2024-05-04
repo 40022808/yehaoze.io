@@ -1,0 +1,125 @@
+
+
+.游戏标题 {
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: 8vw;
+    animation: scale 3s linear infinite;
+}
+
+.开始游戏_button {
+    position: relative;
+    top: 20vw;
+    font-size: 40px;
+    padding: 10px;
+    width: 30vw;
+    border-radius: 50px;
+    border:solid 7px gold;
+    background-color: red;
+    color: rgb(0, 68, 255);
+    animation: rotate 1s linear infinite;
+}
+
+.开始游戏_button:hover {
+    animation: big 0.2s linear forwards;
+}
+
+.开始游戏 {
+    display: block;
+    width: 70vw;
+    height: 800px;
+    background-color: black;
+    position: absolute;
+    top: 5vw;
+    left: 15vw;
+    border: solid 6px black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.游戏界面 {
+    display: none;
+    width: 50vw;
+    height: 800px;
+    background-color: white;
+    position: absolute;
+    top: 5vw;
+    left: 25vw;
+    border: solid 6px black;
+    z-index: 2;
+}
+
+.游戏界面_界面 {
+    width: 50vw;
+    height: 600px;
+}
+
+.游戏界面_功能栏 {
+    height: 200px;
+    width: 50vw;
+    border-top: solid 6px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.me_data {
+    display: none;
+    background-color: red;
+    height: 800px;
+    width: 10vw;
+    position: absolute;
+    top: 5vw;
+    left: 15vw;
+    border: solid 6px black;
+    border-radius: 20px 0 0 20px;
+}
+
+.me {
+    display: none;
+    background-color: white;
+    height: 0;
+    width: 10vw;
+
+}
+
+.boss_data {
+    display: none;
+    background-color: red;
+    height: 800px;
+    width: 10vw;
+    position: absolute;
+    top: 5vw;
+    left: 75vw;
+    border: solid 6px black;
+    border-radius: 0 20px 20px 0;
+}
+
+.boss {
+    display: none;
+    background-color: white;
+    height: 0;
+    width: 10vw;
+
+}
+
+@keyframes scale {
+    0% { transform: scale(1); }   /* 初始状态，元素原始大小 */
+    50% { transform: scale(1.12); } /* 中间状态，元素放大到1.5倍 */
+    100% { transform: scale(1); }  /* 结束状态，元素恢复原始大小 */
+}
+
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(2deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-2deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes big {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.1);}
+}
