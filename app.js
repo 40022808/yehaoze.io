@@ -19,12 +19,20 @@ function 功能栏按钮_按钮_搜索2() {
 
 
 
-const 搜索功能_确定 = document.querySelector(".搜索功能_确定")
 const input = document.querySelector("#input")
 const 搜索结果 = document.querySelector(".搜索结果")
-搜索功能_确定.addEventListener('click',()=>{
+
+function 搜索功能_确定() {
     let text = ""
     text = input.value
     input.value = ""
     搜索结果.innerHTML = "Nem található!"
+}
+
+
+
+const play_button = document.querySelector(".play")
+
+play_button.addEventListener('click', ()=>{
+    window.location.href = "game/game.html"
 })

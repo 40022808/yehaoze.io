@@ -240,6 +240,107 @@ body {
 
 .游戏 {
     width: 80vw;
-    height: 10vw;
+    height: 20vw;
     border:solid 2px rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    
 }
+
+.介绍 {
+    height: 20vw;
+    width: 60vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.521);
+    
+}
+
+.介绍_text {
+    text-align: center;
+    font-size: 3vw;
+    width: 60vw;
+    height: 7vw;
+}
+
+.play {
+    width: 20vw;
+    height: 5vw;
+    font-size: 2vw;
+    position: relative;
+    top: 7vw;
+    border-radius: 10px;
+}
+
+.play:hover {
+    background-color: white;
+}
+
+
+.图标1 {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(image/游戏1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.图标2 {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(image/游戏2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.图标3 {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(image/游戏3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.图标4 {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(image/游戏4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.图标5 {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(image/游戏5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.图标6 {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(image/游戏6.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.图标7 {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(image/游戏7.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.图标8 {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(image/游戏8.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.图标9 {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(image/游戏9.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
