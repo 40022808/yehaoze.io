@@ -10,6 +10,8 @@
 <body>
     
     <audio id="热血战斗" src="bgm/热血战斗.mp3" loop type="mp3" preload="auto"></audio>
+    <audio id="攻击1" src="bgm/攻击1.mp3" type="mp3" preload="auto"></audio>
+    <audio id="攻击2" src="bgm/攻击2.mp3" type="mp3" preload="auto"></audio>
 
     <div class="总功能栏">
         <div class="logo"></div>
@@ -34,12 +36,17 @@
 
     <div class="游戏界面">
         <div class="游戏界面_界面">
-
+            <div class="场景"></div>
+            <div class="我"></div>
+            <div class="敌人"></div>
+            <div class="战斗动画1">
+                <div class="战斗动画2"></div>
+                <div class="战斗动画3"></div>
+            </div>
         </div>
         <div class="游戏界面_功能栏">
-            <button class="攻击">攻击</button>
-            <button class="">123</button>
-            <button class="">abc</button>
+            <button class="攻击"></button>
+            <button class="回血" onclick="回血2()"></button>
         </div>
     </div>
     <div class="me_data">
@@ -49,6 +56,12 @@
         <div class="boss"></div>
     </div>
 
+
+    <div class="胜利">
+        <h1>you win!</h1>
+    </div>
+
+    
 
     <script src="app2.js"></script>
 </body>

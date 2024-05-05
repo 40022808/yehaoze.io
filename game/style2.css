@@ -38,6 +38,30 @@
     text-align: center;
 }
 
+
+.胜利 {
+    display: none;
+    width: 70vw;
+    height: 800px;
+    background-color: white;
+    z-index: 4;
+    position: absolute;
+    top: 5vw;
+    left: 15vw;
+    border: solid 6px black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.胜利 h1 {
+    position: relative;
+    top: 300px;
+    animation: scale 3s linear infinite;
+
+}
+
+
 .游戏界面 {
     display: none;
     width: 50vw;
@@ -53,12 +77,62 @@
 .游戏界面_界面 {
     width: 50vw;
     height: 600px;
+    border-bottom: solid 6px black;
 }
+
+.游戏界面_界面 div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.场景 {
+    background-image: url(image/场景.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    height: 600px;
+}
+
+.我 {
+    display: block;
+    background-image: url(image/我.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    height: 600px;
+    animation: moveDown 1s linear forwards;
+}
+
+.敌人 {
+    background-image: url(image/敌人.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    height: 600px;
+    animation: fade 2s linear forwards;
+}
+
+.战斗动画1 {
+    display: none;
+    width: 50vw;
+    height: 600px;
+    background-color: black;
+}
+
+@keyframes moveDown {
+    0% { transform: translateX(-50px); }
+    100% { transform: translateX(0px); }
+}
+
+
 
 .游戏界面_功能栏 {
     height: 200px;
     width: 50vw;
-    border-top: solid 6px black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -74,6 +148,7 @@
     left: 15vw;
     border: solid 6px black;
     border-radius: 20px 0 0 20px;
+    z-index: 2;
 }
 
 .me {
@@ -81,6 +156,7 @@
     background-color: white;
     height: 0;
     width: 10vw;
+    z-index: 3;
 
 }
 
@@ -94,6 +170,7 @@
     left: 75vw;
     border: solid 6px black;
     border-radius: 0 20px 20px 0;
+    z-index: 2;
 }
 
 .boss {
@@ -101,6 +178,7 @@
     background-color: white;
     height: 0;
     width: 10vw;
+    z-index: 3;
 
 }
 
@@ -122,4 +200,74 @@
 @keyframes big {
     0% {transform: scale(1);}
     100% {transform: scale(1.1);}
+}
+
+
+.攻击 , .防御 , .回血 {
+    width: 200px;
+    height: 150px;
+    border: none;
+    background-color: white;
+
+}
+
+.攻击:hover , .防御:hover , .回血:hover {
+    animation: big 0.1s linear forwards;
+}
+
+.攻击 {
+    background-image: url(image/攻击.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.防御 {
+    background-image: url(image/防御.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.回血 {
+    background-image: url(image/回血.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: right;
+    font-size: 50px;
+    padding-right: -5px;
+}
+
+@keyframes fade {
+    0% { opacity: 0; top: -100px; }
+    50% { opacity: 0; top: -10px; }
+    100% { opacity: 1; top: 0px; }
+}
+
+@keyframes fade2 {
+    0% { opacity: 0; top: -10px; }
+    100% { opacity: 1; top: 0px; }
+}
+
+
+.战斗动画2 {
+    display: none;
+    width: 50vw;
+    height: 600px;
+    background-image: url(image/战斗动画2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: fade2 0.1s linear forwards;
+}
+
+.战斗动画3 {
+    display: none;
+    width: 50vw;
+    height: 600px;
+    background-image: url(image/战斗动画3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: fade2 0.1s linear forwards;
 }
